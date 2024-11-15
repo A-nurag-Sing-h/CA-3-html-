@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FurrEver Friends</title>
+        <link rel ="stylesheet" href = "style.css" >
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class = "header">
+            <div class = "container">
+                <div class = "navbar">
+                    <div class = "logo">
+                        <img src ="furrever.jpg" height = "50px" >
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href = "">Home</a>
+                            <a href = "about.html">About</a>
+                            <a href = "">Contacts</a>
+                            <a href = "account.html">Sign in</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                
+            </div>
+            <div class = "row">
+                <div class = "c2">
+                    <h1>Saving one animal won't change<br> the world, but it will change the world for that one animal.</h1>
+                    <p>Who rescued who? When you adopt, you save a life—and it might just save yours too</p>
+                    <a href = "#categories" class = "exp">Explore Now &#8594; </a>
+                </div>
+                <div class = "c2">
+                    <img src = "pets.webp" height = "400px">
+                </div>
+            </div>
+        </div>
+  
+
+
+
+
+        <div class = "small-container" id = "categories">
+            <div class = "categories">
+                <div class = "row1">
+                    <div class = "c3">
+                        <a href = "#dogs"><img src = "dog.jpg"></a>
+                    </div>
+                    <div class = "c3">
+                        <a href = "#cats"><img src = "cat.jpg"></a>
+                    </div>
+                    <div class = "c3">
+                        <a href = "#birds"><img src = "birds.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <h1> &nbsp;  &nbsp;  &nbsp;Explore Pets🔎</h1>
+        <input id = "searchBar" onkeydown = "search(event)" class = "searchbar" type = "text" placeholder = "Looking for a pet? Start here!...">
+        <div class = "small-container2">
+            <h2></h2>
+            <div id = "dogs" class = "row2">
+                <div class = "c4 ger" >
+                    <img src = "germanshepard.jpg">
+                    <h4>German Shepherd</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★★
+                    </div>
+                    <p class = "cost">&nbsp; ₹18,000</p>
+                    &nbsp; &nbsp;<button  class = "buy" onclick="adopt()">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "labra.jpg">
+                    <h4>Labrador</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★★
+                        
+                    </div>
+                    <p class = "cost">&nbsp;  ₹10,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "bulldog.jpg">
+                    <h4> Bulldog</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                    </div>
+                    <p class = "cost">&nbsp;  ₹20,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "husky.jpg">
+                    <h4> Husky</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                    </div>
+                    <p class = "cost">&nbsp; ₹40,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+            </div>
+        </div>
+
+
+  
+
+
+
+
+        <div class = "small-container2" id = "cats">
+            <h2></h2>
+            <div class = "row2">
+                <div class = "c4" >
+                    <img src = "British Shorthair.webp">
+                    <h4>&nbsp; British Shorthair</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                    </div>
+                    <p class = "cost">&nbsp; ₹30,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "Persian.jpg">
+                    <h4>&nbsp; Persian</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★★
+                        
+                    </div>
+                    <p class = "cost">&nbsp;  ₹13,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "Bengal.jpg">
+                    <h4>&nbsp; Bengal cat</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★★
+                    </div>
+                    <p class = "cost">&nbsp;  ₹65,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "Russian Blue.jpg">
+                    <h4>&nbsp; Russian Blue Cat</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                    </div>
+                    <p class = "cost">&nbsp; ₹8,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+            </div>
+        </div>
+       
+
+
+
+
+
+        <div class = "small-container2" id = "birds">
+            <h2></h2>
+            <div class = "row2">
+                <div class = "c4" >
+                    <img src = "Parakeet.jpg">
+                    <h4>&nbsp; Parakeet</h4>
+                    <div class = "rating">
+                        &nbsp;★★★☆☆
+                    </div>
+                    <p class = "cost">&nbsp; ₹2000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "Cockatiel.jpg">
+                    <h4>&nbsp; Cockatiel</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                        
+                    </div>
+                    <p class = "cost">&nbsp;  ₹5,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "Canary.jpg">
+                    <h4>&nbsp; Canary</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★★
+                    </div>
+                    <p class = "cost">&nbsp;  ₹9,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+                <div class = "c4" >
+                    <img src = "African Grey Parrot.jpg">
+                    <h4>&nbsp; African Grey Parrot</h4>
+                    <div class = "rating">
+                        &nbsp;★★★★☆
+                    </div>
+                    <p class = "cost">&nbsp; ₹20,000</p>
+                    &nbsp; &nbsp;<button class = "buy">Adopt Now</button>
+                </div>
+            </div>
+        </div>
+   
+
+
+
+
+        <h1 style = "margin-left:40px;">Pet Accessories 💰</h1>
+        <input id = "acc" class = "searchbar" onkeydown = "searchacc(event)" type = "text" placeholder = "Already have a pet!! Try these ...">
+    
+
+
+
+
+
+    <div class = "small-container2" id = "birds">
+        <h2></h2>
+        <div class = "row2">
+            <div class = "c4" >
+                <img src = "collars.jpg">
+                <h4>&nbsp; collars</h4>
+                <div class = "rating">
+                    &nbsp;★★★☆☆
+                </div>
+                <p class = "cost">&nbsp; ₹1,999</p>
+                &nbsp; &nbsp;<button onclick = "bought()" class = "buy1">Buy Now</button>
+            </div>
+            <div class = "c4" >
+                <img src = "Harnesses.webp">
+                <h4>&nbsp; Harnesses</h4>
+                <div class = "rating">
+                    &nbsp;★★★★☆
+                    
+                </div>
+                <p class = "cost">&nbsp;  ₹2,199</p>
+                &nbsp; &nbsp;<button class = "buy1">Buy Now</button>
+            </div>
+            <div class = "c4" >
+                <img src = "Beds and Blankets.avif">
+                <h4>&nbsp; Beds and Blankets</h4>
+                <div class = "rating">
+                    &nbsp;★★★★★
+                </div>
+                <p class = "cost">&nbsp;  ₹3,000</p>
+                &nbsp; &nbsp;<button class = "buy1">Buy Now</button>
+            </div>
+            <div class = "c4" >
+                <img src = "Toys.avif">
+                <h4>&nbsp; Toys</h4>
+                <div class = "rating">
+                    &nbsp;★★★★☆
+                </div>
+                <p class = "cost">&nbsp; ₹1,900</p>
+                &nbsp; &nbsp;<button class = "buy1">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class = "footer">
+        <div class = "container">
+            <div class = "row3">
+                <div class = "fc1">
+                    <h1>Thank You for visiting our website</h1>
+                    <p><b>Stay pawsome!</b></p>
+                </div>
+                <div class = "fc2">
+                    <img src = "furrever.jpg" height="50px">
+                    <p><b>furrever co.</b></p>
+                    <p><b>&copy; All rights are reserved.</b></p>
+                </div>
+                <div class = "fc3">
+                    <h1><b>Follow Us on...</b></h1>
+                    <ul>
+                        <li><a href = "https://www.facebook.com/help/668969529866328/"><p>Facebook</p><img src = "facebook.png" height = "20px"></a></li>
+                        <li><a href = "https://x.com/"><p>X</p><img src = "x.jpg" height = "20px"></a></li>
+                        <li><a href = "https://www.instagram.com/?hl=en"><p>Instagram</p><img src = "insta.png" height = "20px"></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        <script>
+            const adoptButtons = document.querySelectorAll('.buy');
+            adoptButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Thank You for Adopting a Pet !');
+                });
+            });
+        </script>
+        <script>
+            const buy1Buttons = document.querySelectorAll('.buy1');
+            buy1Buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Thanks You for the purchase!!');
+                });
+            });
+            function adopt(){
+                let borderGer = document.querySelector(".buy");
+                borderGer.innerText = "Adopted"
+            }
+            function bought(){
+                let borderGer1 = document.querySelector(".buy1");
+                borderGer1.innerText = "Bought"
+            }
+        </script>
+        
+
+
+
+
+<script>
+    function search(event){
+        if (event.key === 'Enter'){
+            find()
+        }
+    }
+    function find(){
+        const term = document.querySelector('#searchBar');
+        let name_pet = term.value
+        console.log(typeof(name_pet))
+        let name = document.querySelectorAll('.c4')
+        console.log(name)
+        for(i=0;i<name.length;i++){
+            let animalfind = name[i].innerText.toLowerCase()
+            
+            if (animalfind.includes(name_pet) ){
+                if (name_pet !== ""){
+                    console.log(name_pet,"hello")
+                    name[i].style.backgroundColor = 'pink'
+                    name[i].style.border = "2px solid black"
+                    name[i].style.order = "-1"
+                }else{
+                    name[i].style.backgroundColor = 'white'
+                    name[i].style.border = "none"
+                }
+            } 
+        }
+    }
+
+
+
+
+        function searchacc(event){
+            if (event.key === 'Enter'){
+                findacc()
+            }
+        }
+        function findacc(){
+            const termacc = document.querySelector('#acc');
+            let acc_pet = termacc.value
+            console.log(typeof(name_pet))
+            let nameacc = document.querySelectorAll('.c4')
+            console.log(nameacc)
+            for(i=0;i<nameacc.length;i++){
+                let accfind = nameacc[i].innerText.toLowerCase()
+                
+                if (accfind.includes(acc_pet) ){
+                    if (acc_pet !== ""){
+                        console.log(acc_pet,"hello")
+                        nameacc[i].style.backgroundColor = 'pink'
+                        nameacc[i].style.border = "2px solid black"
+                        nameacc[i].style.order = "-1"
+                    }else{
+                        nameacc[i].style.backgroundColor = 'white'
+                        nameacc[i].style.border = "none"
+                    }
+                } 
+            }
+        }
+</script>
+
+
+    </body>
+</html>
